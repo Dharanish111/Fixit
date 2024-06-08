@@ -13,7 +13,7 @@ def ai_page():
     with open(filepath, "r") as f:
         return json.load(f)
 
- lottie_animation = load_lottiefile("/home/dharanish/Downloads/animation.json")
+ lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/FixitAI/main/animation.json")
 
 
  openai_api_key = st.secrets[("openai_api_key")]
