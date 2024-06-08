@@ -3,15 +3,15 @@ st.header("Fixit✨ (The AI Chatbot):")
 """In today's fast-paced and digital-driven world, efficient communication forms the backbone of successful businesses. One such technology that has reshaped the landscape of digital communication is the 'Chatbot'—an AI-powered program designed to interact with humans in their natural languages. These dialogues can take place on any platform, such as messaging apps, websites, mobile apps, or even over the phone.
 """
 
-image_1 = st.image("/home/dharanish/Fixit/Fixit/pics/fixit1.jpg")
+image_1 = st.image("https://github.com/Dharanish111/Blog/blob/main/fixit1.jpg?raw=true")
 
 st.markdown("I created a chatbot named Fixit. It is a multi-API chatbot and can respond in all official languages of India. Additionally, I have set a reminder feature which is useful for maintaining punctuality. The Fixit chatbot also supports file inputs such as .txt, .pdf, and .docx, which can be provided by the user.")
 
-image_2 = st.image("/home/dharanish/Fixit/Fixit/pics/fixit2.jpg")
+image_2 = st.image("https://github.com/Dharanish111/Blog/blob/main/fixit2.jpg?raw=true")
 
 st.subheader(":orange[API SELECTION:]")
 
-image_3 = st.image("/home/dharanish/Fixit/Fixit/pics/api.jpg")
+image_3 = st.image("https://github.com/Dharanish111/Blog/blob/main/api.jpg?raw=true")
 
 st.markdown("An API (application programming interface) is a set of instructions that allows software to communicate with other software.They are a way for different programs to share data and functionality. I have placed radio buttons to switch between two prefered APIs (Openai & Gemini).")
    
@@ -23,7 +23,7 @@ st.markdown(multi)
  
 st.subheader(":orange[FILE UPLOADER:]")
 
-image_4 = st.image("/home/dharanish/Fixit/Fixit/pics/fileuploader.jpg")
+image_4 = st.image("https://github.com/Dharanish111/Blog/blob/main/fileuploader.jpg?raw=true")
 
 """
 The image is a screenshot of a file upload screen.						
@@ -36,7 +36,7 @@ The text at the bottom instructs users to drag and drop files or browse files.It
 
 st.subheader(":orange[Reminder:]")
 
-image_5 = st.image("/home/dharanish/Fixit/Fixit/pics/reminder.jpg")
+image_5 = st.image("https://github.com/Dharanish111/Blog/blob/main/reminder.jpg?raw=true")  
 
 st.markdown("The image is a reminder screen with a reminder message, reminder time, and set reminder button. Here are some details about the image:")
 
@@ -69,7 +69,7 @@ st.markdown(multi)
 
 st.subheader(":orange[LANGUAGES SELECTION:]")
 
-image_6 = st.image("/home/dharanish/Fixit/Fixit/pics/languages.jpg")
+image_6 = st.image("https://github.com/Dharanish111/Blog/blob/main/languages.jpg?raw=true")
 
 st.markdown("The  screenshot of a select language screen.I have used selectbox to choose preferred language from list.")
  
@@ -101,7 +101,7 @@ It has all Indian Languages.
 
 st.subheader(":orange[CHAT HISTORY:]")
 
-image_7 = st.image("/home/dharanish/Fixit/Fixit/pics/chathistory.jpg")
+image_7 = st.image("https://github.com/Dharanish111/Blog/blob/main/chathistory.jpg?raw=true")
 
 """
 
