@@ -8,7 +8,7 @@ import os
 import requests
 def ai_page():
 
-def load_lottiefile(url):
+ def load_lottiefile(url):
     response = requests.get(url)
     return response.json()
  lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/Fixit/main/animation.json")
