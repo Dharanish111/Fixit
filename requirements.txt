@@ -4,4 +4,3 @@ google.generativeai
 streamlit_lottie
 requests
 streamlit
-json
