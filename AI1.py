@@ -8,11 +8,9 @@ import os
 import requests
 def ai_page():
 
- # Load Lottie animation from a JSON file
- def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
+def load_lottiefile(url):
+    response = requests.get(url)
+    return response.json()
  lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/Fixit/main/animation.json")
 
 
