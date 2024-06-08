@@ -17,7 +17,6 @@ def ai_page():
 
 
  openai_api_key = st.secrets[("openai_api_key")]
- google_gemini_key = "AIzaSyBSd-CByMe7i-Maxgatg3ISn3vyQw3M2l8"
 
  # Initialize session state attributes
  if 'selected_api' not in st.session_state:
