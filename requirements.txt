@@ -3,6 +3,5 @@ openai==0.28
 google.generativeai
 streamlit_lottie
 requests
-sqlite3
 streamlit
 json
