@@ -4,5 +4,6 @@ google.generativeai
 streamlit_lottie
 requests
 streamlit
-sqlite3
+sqlalchemy
+sqlite-utils
 
