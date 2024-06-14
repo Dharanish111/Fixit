@@ -9,8 +9,8 @@ from gtts import gTTS
 
 def ai_page():
     def load_lottiefile(url):
-    response = requests.get(url)
-    return response.json()
+        response = requests.get(url)
+        return response.json()
 
     lottie_animation = load_lottiefile("https://github.com/Dharanish111/Fixit/main/animation.json")
 
