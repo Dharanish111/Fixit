@@ -13,7 +13,7 @@ def ai_page():
         response = requests.get(url)
         return response.json()
 
-    lottie_animation = load_lottiefile("https://github.com/Dharanish111/Fixit/main/animation.json")
+    lottie_animation = load_lottiefile("https://raw.githubusercontent.com/Dharanish111/Fixit/loading_animation/animation.json")
 
     openai_api_key = st.secrets["openai_api_key"]
     google_gemini_key = "AIzaSyBSd-CByMe7i-Maxgatg3ISn3vyQw3M2l8"
