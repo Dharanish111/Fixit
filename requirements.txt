@@ -6,4 +6,4 @@ requests
 streamlit
 sqlalchemy
 sqlite-utils
-
+gtts
