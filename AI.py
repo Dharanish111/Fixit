@@ -67,7 +67,7 @@ def registration_page():
                     register_user(username, password, security_question, security_answer)
                     st.success('User registered successfully!')
                     st.session_state['page'] = 'login'  # Redirect to login page after successful registration
-                    st.experimental_rerun()
+                    st.rerun()
                 except sqlite3.IntegrityError:
                     st.error('Username already exists')
             else:
@@ -76,7 +76,7 @@ def registration_page():
     with btn2:
         if st.button('Go to Login'):
             st.session_state['page'] = 'login'
-            st.experimental_rerun()
+            st.rerun()
 
 # Function for login page
 def login_page():
@@ -90,13 +90,13 @@ def login_page():
                 st.success('Login successful!')
                 st.session_state['logged_in'] = True
                 st.session_state['username'] = login_username
-                st.experimental_rerun()  # Rerun to show AI page
+                st.rerun()  # Rerun to show AI page
             else:
                 st.error('Invalid username or password')
     with btn2:
         if st.button('Forgot Password'):
             st.session_state['page'] = 'forgot_password'
-            st.experimental_rerun()
+            st.rerun()
 
 # Function for forgot password page
 def forgot_password_page():
@@ -110,7 +110,7 @@ def forgot_password_page():
             if reset_password(username, security_answer, new_password):
                 st.success('Password reset successful!')
                 st.session_state['page'] = 'login'  # Redirect to login page after successful reset
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error('Invalid username or security answer')
         else:
