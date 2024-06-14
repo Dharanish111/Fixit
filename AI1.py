@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 import base64
 from io import BytesIO
 from gtts import gTTS
+import requests
 
 def ai_page():
     def load_lottiefile(url):
