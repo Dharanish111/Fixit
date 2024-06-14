@@ -7,4 +7,3 @@ streamlit
 sqlalchemy
 sqlite-utils
 gtts
-json
