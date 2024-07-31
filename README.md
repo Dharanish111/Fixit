@@ -1,7 +1,3 @@
-Sure! Here's a README file for your project:
-
----
-
 # Fixit✨
 
 Fixit is an AI-powered chatbot built using Streamlit, OpenAI API, and Google Gemini API. This project includes user registration, login, and password reset functionalities with a focus on providing helpful responses in multiple languages.
