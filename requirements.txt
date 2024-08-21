@@ -8,4 +8,5 @@ sqlalchemy
 sqlite-utils
 gtts
 speechrecognition
+PyAudio==0.2.11
 
