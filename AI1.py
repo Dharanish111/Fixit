@@ -7,6 +7,7 @@ import base64
 from io import BytesIO
 from gtts import gTTS
 import requests
+import speech_recognition as sr
 
 def ai_page():
     def load_lottiefile(url):
@@ -132,6 +133,22 @@ def ai_page():
     st.title("Fixit✨")
     user_input = st.text_input("Search here...")
 
+    # Speech-to-text button
+    if st.button("Click to Speak"):
+        recognizer = sr.Recognizer()
+        with sr.Microphone() as source:
+            st.info("Please speak something...")
+            recognizer.adjust_for_ambient_noise(source, duration=1)
+            audio = recognizer.listen(source)
+            try:
+                spoken_text = recognizer.recognize_google(audio, language="en-IN")
+                st.success(f"You said: {spoken_text}")
+                user_input = spoken_text
+            except sr.UnknownValueError:
+                st.error("Sorry, I did not understand the audio.")
+            except sr.RequestError:
+                st.error("Sorry, there was a problem with the Google Speech Recognition service.")
+
     # Placeholder for the response and loading animation
     response_placeholder = st.empty()
     animation_placeholder = st.empty()
@@ -157,11 +174,11 @@ def ai_page():
         audio_fp = text_to_speech(response)
 
         # Display audio player
-        col1,col2 = st.columns(2)
+        col1, col2 = st.columns(2)
         with col1:
-         st.audio(audio_fp, format='audio/mp3', start_time=0)
+            st.audio(audio_fp, format='audio/mp3', start_time=0)
 
-         st.session_state.chat_history.append({"user_input": user_input, "response": response})
+        st.session_state.chat_history.append({"user_input": user_input, "response": response})
 
     st.subheader("Chat History")
     for chat in st.session_state.chat_history:
