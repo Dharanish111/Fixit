@@ -9,3 +9,5 @@ sqlite-utils
 gtts
 speechrecognition 
 pyaudio
+python3-distutils
+setuptools
