@@ -7,4 +7,5 @@ streamlit
 sqlalchemy
 sqlite-utils
 gtts
+speechrecognition
 
